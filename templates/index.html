@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Project Title</title>
+    
+    <!--Vendor CSS files-->
+    <link href="../static/css/vendor/bootstrap.min.css" rel="stylesheet">
+    <link href="../static/css/vendor/bootstrap-select.min.css" rel="stylesheet">
+    <link href="../static/css/vendor/bootstrap-theme.min.css" rel="stylesheet">
+    <link href="../static/css/vendor/nv.d3.min.css" rel="stylesheet">
+    <link href="../static/css/vendor/d3.tip.css" rel="stylesheet">
+    <link href="../static/css/vendor/font-awesome.min.css" rel="stylesheet">    
+    <!-- <link href="../static/css/vendor/bootstrap.min.css.map" rel="stylesheet"> -->
+    <!-- <link href="../static/css/vendor/bootstrap-select.css.map" rel="stylesheet"> -->
+    <!-- <link href="../static/css/vendor/bootstrap-theme.css.map" rel="stylesheet"> -->
+
+    <!--Custom CSS files-->
+    <link href="../static/css/style.css" rel="stylesheet">    
+    
+    <!--JS files-->
+    <script src="../static/js/vendor/jquery-2.1.4.min.js"></script>
+    <script src="../static/js/vendor/bootstrap.min.js"></script>
+    <script src="../static/js/vendor/bootstrap-select.min.js"></script>
+    <script src="../static/js/vendor/d3.min.js"></script>
+    <script src="../static/js/vendor/d3.tip.js"></script>    
+    <!--<script src="../static/js/vendor/bootstrap-select.js.map"></script>-->
+</head>
+<body>
+    <div id='topPanel'>
+        <p style="font-size:24px;margin-left:15px;">Project Title</p>
+    </div>
+    <div id='mainbody'>
+        <div class="col-md-2" id='leftPanel'>        
+        </div>
+        <div class="col-md-8" id='mainContainer'>
+            <span id='leftPanelToggleButton' class="glyphicon glyphicon-remove-circle" style='float:left;font-size:20px;'></span>
+            <span id='rightPanelToggleButton' class="glyphicon glyphicon-remove-circle" style='float:right;font-size:20px;'></span>
+        </div>
+        <div class="col-md-2" id='rightPanel'>        
+        </div>
+    </div>
+    <div class="loadingmodal"></div>
+</body>
+<script src="../static/js/utils.js"></script>
+<script src="../static/js/ui.js"></script>
+<script src="../static/js/global.js"></script>
+<script src="../static/js/main.js"></script>
+<script type="text/javascript">
+    $("#mainContainer").height($(window).height()-40);
+    $("#leftPanel").height($(window).height()-40);
+    $("#rightPanel").height($(window).height()-40);
+    main.init();
+</script>
+</html>
