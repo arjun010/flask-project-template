@@ -1,7 +1,7 @@
 (function(){
 	
-    global = {};
-	global.leftPanelStatus = 1;
-	global.rightPanelStatus = 1;	
+    globalVars = {};
+	globalVars.leftPanelStatus = 1;
+	globalVars.rightPanelStatus = 1;	
 
 })()
